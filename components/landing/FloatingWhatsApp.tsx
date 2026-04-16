@@ -19,10 +19,10 @@ export function FloatingWhatsApp() {
       href={whatsappLink(WA_MESSAGES.chat)}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-[calc(5.25rem+env(safe-area-inset-bottom))] start-4 z-40 flex h-14 w-14 items-center justify-center rounded-full border border-white/15 bg-gradient-to-br from-[#0b1230] to-[#050a24] text-[#25D366] shadow-[0_18px_50px_-18px_rgba(37,211,102,0.55)] backdrop-blur-md transition hover:brightness-110 md:bottom-8 md:start-8 md:h-16 md:w-16"
+      className="fixed bottom-[calc(6.35rem+env(safe-area-inset-bottom))] start-4 z-40 flex h-[3.65rem] w-[3.65rem] items-center justify-center rounded-full border border-brand-cyan/25 bg-gradient-to-br from-[#0c1636] via-[#070f28] to-[#040716] text-[#25D366] shadow-[0_0_0_1px_rgba(255,255,255,0.06),0_22px_60px_-18px_rgba(37,211,102,0.45),0_0_40px_-16px_rgba(129,255,254,0.25)] backdrop-blur-xl transition hover:brightness-110 active:scale-[0.98] md:bottom-9 md:start-8 md:h-16 md:w-16"
       aria-label="فتح واتساب للتواصل مع بيت المصور"
     >
-      <WhatsAppIcon className="h-7 w-7" />
+      <WhatsAppIcon className="h-7 w-7 md:h-8 md:w-8" />
     </a>
   );
 }

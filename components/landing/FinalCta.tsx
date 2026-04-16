@@ -4,10 +4,13 @@ import { CtaButton } from "./CtaButton";
 
 export function FinalCta() {
   return (
-    <section className="pb-28 pt-6 sm:pb-20 sm:pt-2" aria-labelledby="final-heading">
+    <section
+      className="pb-[7.25rem] pt-6 sm:pb-20 sm:pt-2 md:pb-20"
+      aria-labelledby="final-heading"
+    >
       <Container>
-        <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-l from-brand-blue/25 via-brand-purple/15 to-brand-navy p-8 sm:p-10">
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_0%_0%,rgba(129,255,254,0.16),transparent_45%),radial-gradient(circle_at_100%_100%,rgba(190,22,34,0.18),transparent_45%)]" />
+        <div className="relative overflow-hidden rounded-[2rem] border border-white/12 bg-gradient-to-l from-brand-blue/30 via-brand-purple/20 to-brand-navy p-8 shadow-[0_0_0_1px_rgba(255,255,255,0.04)_inset,0_40px_120px_-60px_rgba(19,25,180,0.55)] sm:p-10">
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_0%_0%,rgba(129,255,254,0.18),transparent_46%),radial-gradient(circle_at_100%_100%,rgba(190,22,34,0.22),transparent_46%),radial-gradient(circle_at_50%_120%,rgba(89,1,89,0.22),transparent_55%)]" />
 
           <div className="relative grid gap-8 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-8">
@@ -33,6 +36,7 @@ export function FinalCta() {
                   target="_blank"
                   rel="noopener noreferrer"
                   variant="primary"
+                  size="prominent"
                   className="w-full"
                   aria-label="احجز مكانك عبر واتساب"
                 >
@@ -43,6 +47,7 @@ export function FinalCta() {
                   target="_blank"
                   rel="noopener noreferrer"
                   variant="secondary"
+                  size="prominent"
                   className="w-full"
                   aria-label="تواصل عبر واتساب"
                 >

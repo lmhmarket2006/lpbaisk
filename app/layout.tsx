@@ -68,7 +68,7 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl" className="h-full">
       <body
-        className={`${ibmArabic.variable} ${sourceSans.variable} min-h-full bg-brand-navy antialiased`}
+        className={`${ibmArabic.variable} ${sourceSans.variable} min-h-full bg-brand-navy font-sans antialiased`}
       >
         <script
           type="application/ld+json"
