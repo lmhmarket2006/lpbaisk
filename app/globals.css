@@ -5,6 +5,11 @@
   --canvas: #010a2d;
   --elevated: rgba(255, 255, 255, 0.04);
   --stroke: rgba(255, 255, 255, 0.1);
+  --vignette: radial-gradient(
+    120% 80% at 50% 0%,
+    transparent 40%,
+    rgba(1, 10, 45, 0.55) 100%
+  );
 }
 
 @theme inline {
@@ -23,9 +28,10 @@
   --font-sans: var(--font-ibm-arabic), system-ui, sans-serif;
   --font-en: var(--font-source-sans), system-ui, sans-serif;
 
-  --shadow-glow-red: 0 0 80px -20px rgba(190, 22, 34, 0.55);
-  --shadow-glow-magenta: 0 0 90px -25px rgba(251, 66, 253, 0.35);
-  --shadow-glow-blue: 0 0 100px -30px rgba(19, 25, 180, 0.45);
+  --shadow-glow-red: 0 0 90px -18px rgba(190, 22, 34, 0.62);
+  --shadow-glow-magenta: 0 0 110px -22px rgba(251, 66, 253, 0.42);
+  --shadow-glow-blue: 0 0 120px -28px rgba(19, 25, 180, 0.52);
+  --shadow-glow-plum: 0 0 100px -30px rgba(134, 23, 85, 0.45);
 }
 
 @layer base {
@@ -35,24 +41,46 @@
 
   body {
     background: radial-gradient(
-        1200px 600px at 85% -10%,
-        rgba(89, 1, 89, 0.45),
+        1100px 520px at 88% -8%,
+        rgba(89, 1, 89, 0.5),
+        transparent 58%
+      ),
+      radial-gradient(
+        900px 520px at -5% 15%,
+        rgba(19, 25, 180, 0.42),
+        transparent 56%
+      ),
+      radial-gradient(
+        760px 460px at 72% 58%,
+        rgba(190, 22, 34, 0.22),
+        transparent 58%
+      ),
+      radial-gradient(
+        700px 420px at 18% 92%,
+        rgba(134, 23, 85, 0.28),
         transparent 60%
       ),
       radial-gradient(
-        900px 500px at 0% 20%,
-        rgba(19, 25, 180, 0.35),
-        transparent 55%
-      ),
-      radial-gradient(
-        700px 400px at 70% 60%,
-        rgba(190, 22, 34, 0.18),
+        520px 360px at 95% 88%,
+        rgba(65, 69, 147, 0.22),
         transparent 55%
       ),
       var(--canvas);
-    color: rgba(255, 255, 255, 0.92);
+    color: rgba(255, 255, 255, 0.93);
     font-family: var(--font-sans);
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.65;
+  }
+
+  :where(p, li) {
+    line-height: 1.75;
+  }
+
+  :where(h1, h2, h3) {
+    line-height: 1.22;
+    text-wrap: balance;
   }
 
   ::selection {
@@ -94,6 +122,20 @@
   }
 }
 
+@keyframes shimmer-line {
+  0% {
+    transform: translateX(-40%);
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateX(40%);
+    opacity: 0.35;
+  }
+}
+
 .animate-fade-up {
   animation: fade-up 0.75s ease-out both;
 }
@@ -122,6 +164,10 @@
   animation: drift 18s ease-in-out infinite;
 }
 
+.animate-shimmer-line {
+  animation: shimmer-line 7s ease-in-out infinite;
+}
+
 .noise-overlay {
   pointer-events: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.055'/%3E%3C/svg%3E");
@@ -132,6 +178,28 @@
   border-radius: 9999px;
   box-shadow: inset 0 0 40px rgba(129, 255, 254, 0.08),
     0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.hero-spotlight {
+  background: radial-gradient(
+      900px 520px at 70% 12%,
+      rgba(129, 255, 254, 0.12),
+      transparent 55%
+    ),
+    radial-gradient(
+      700px 420px at 10% 40%,
+      rgba(251, 66, 253, 0.1),
+      transparent 55%
+    ),
+    radial-gradient(
+      520px 360px at 85% 70%,
+      rgba(19, 25, 180, 0.18),
+      transparent 60%
+    );
+}
+
+.hero-vignette {
+  background: var(--vignette);
 }
 
 @utility font-en {
