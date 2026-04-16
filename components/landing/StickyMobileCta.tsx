@@ -14,7 +14,7 @@ export function StickyMobileCta() {
             target="_blank"
             rel="noopener noreferrer"
             variant="primary"
-            className="min-h-14 flex-[1.2] flex-1 rounded-2xl px-2 text-[15px] font-extrabold shadow-[0_22px_60px_-22px_rgba(190,22,34,0.75)]"
+            className="min-h-14 flex-[1.25] rounded-2xl px-2 text-[15px] font-extrabold shadow-[0_22px_60px_-22px_rgba(190,22,34,0.75)]"
             aria-label="احجز مكانك عبر واتساب"
           >
             احجز الآن
