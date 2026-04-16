@@ -118,18 +118,18 @@ export function Hero() {
 
           <div className="order-1 lg:order-2 lg:col-span-5">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              <div className="pointer-events-none absolute -inset-1 rounded-[2.1rem] bg-gradient-to-br from-brand-magenta/35 via-brand-blue/25 to-brand-red/25 opacity-80 blur-xl" />
-              <div className="lens-ring relative aspect-square max-w-md overflow-hidden rounded-[2rem] bg-gradient-to-br from-white/[0.1] to-transparent p-px shadow-[var(--shadow-glow-magenta),var(--shadow-glow-blue),var(--shadow-glow-plum)] lg:mx-0">
-                <div className="relative flex h-full w-full flex-col justify-between overflow-hidden rounded-[1.95rem] bg-gradient-to-b from-surface-2/95 via-brand-navy to-[#020616] p-6 sm:p-8">
-                  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_28%_0%,rgba(251,66,253,0.26),transparent_46%),radial-gradient(circle_at_82%_78%,rgba(129,255,254,0.14),transparent_42%),radial-gradient(circle_at_50%_120%,rgba(19,25,180,0.22),transparent_55%)]" />
+              <div className="pointer-events-none absolute -inset-2 rounded-3xl bg-gradient-to-br from-brand-magenta/30 via-brand-blue/22 to-brand-red/22 opacity-90 blur-2xl" />
+              <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-gradient-to-br from-white/18 via-brand-indigo/15 to-brand-purple/20 p-px shadow-[var(--shadow-glow-magenta),var(--shadow-glow-blue),var(--shadow-glow-plum)] lg:mx-0">
+                <div className="relative flex flex-col gap-8 overflow-hidden rounded-[1.35rem] bg-gradient-to-b from-surface-2/98 via-brand-navy to-[#020616] p-6 sm:p-8">
+                  <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(251,66,253,0.08)_0%,transparent_42%),linear-gradient(315deg,rgba(129,255,254,0.06)_0%,transparent_45%),radial-gradient(ellipse_at_50%_0%,rgba(19,25,180,0.2),transparent_55%)]" />
 
-                  <div className="relative flex items-start justify-between gap-4">
-                    <div className="min-w-0">
+                  <div className="relative flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between sm:gap-5">
+                    <div className="min-w-0 flex-1">
                       <div className="flex flex-wrap items-center gap-2">
-                        <p className="text-[11px] font-semibold uppercase tracking-wide text-white/55 sm:text-xs">
-                          الاستثمار بعد الخصم
+                        <p className="text-[11px] font-bold tracking-wide text-white/70 sm:text-xs">
+                          بعد الخصم
                         </p>
-                        <span className="rounded-full border border-brand-cyan/25 bg-brand-cyan/10 px-2 py-0.5 text-[10px] font-bold text-brand-cyan sm:text-[11px]">
+                        <span className="rounded-lg border border-brand-cyan/30 bg-brand-cyan/10 px-2.5 py-0.5 text-[10px] font-bold text-brand-cyan sm:text-[11px]">
                           وفّر 401 ريال
                         </span>
                       </div>
@@ -145,32 +145,30 @@ export function Hero() {
                         سعر واضح بدون مفاجآت — مع خيار التقسيط على دفعتين.
                       </p>
                     </div>
-                    <div className="shrink-0 rounded-2xl border border-white/12 bg-black/35 px-3.5 py-2.5 text-start shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur">
+                    <div className="shrink-0 self-start rounded-2xl border border-white/12 bg-black/40 px-4 py-3 text-start shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur sm:min-w-[7.5rem]">
                       <p className="text-[10px] font-semibold text-white/50 sm:text-[11px]">
                         قبل الخصم
                       </p>
-                      <p className="mt-1 text-xl font-bold tracking-tight text-white/35 line-through tabular-nums sm:text-2xl">
+                      <p className="mt-1 text-2xl font-extrabold tracking-tight text-white/35 line-through tabular-nums sm:text-3xl">
                         1200
                       </p>
                     </div>
                   </div>
 
-                  <div className="relative mt-8 space-y-3 rounded-2xl border border-white/12 bg-black/35 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur sm:p-5">
-                    <div className="flex items-center justify-between gap-3">
-                      <p className="text-sm font-semibold text-white">
-                        تقسيط مريح
-                      </p>
-                      <span className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs font-semibold text-white/90">
+                  <div className="relative rounded-2xl border border-white/12 bg-black/40 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur sm:p-5">
+                    <div className="flex flex-wrap items-center justify-between gap-3">
+                      <p className="text-sm font-bold text-white">تقسيط مريح</p>
+                      <span className="rounded-lg border border-white/12 bg-white/10 px-3 py-1 text-xs font-bold text-white/90">
                         دفعتين
                       </span>
                     </div>
-                    <p className="text-xs leading-[1.75] text-white/66 sm:text-[13px]">
+                    <p className="mt-3 text-xs leading-[1.75] text-white/66 sm:text-[13px]">
                       نثبت لك أن التعلم الاحترافي يستحق الثقة: استرداد كامل قبل
                       بداية الورشة عند الاعتذار.
                     </p>
                   </div>
 
-                  <div className="relative mt-6 flex items-center justify-between gap-3 border-t border-white/10 pt-5">
+                  <div className="relative flex items-center justify-between gap-4 border-t border-white/10 pt-5">
                     <div>
                       <p className="text-[11px] font-semibold text-white/50">
                         الموقع
@@ -180,7 +178,7 @@ export function Hero() {
                       </p>
                     </div>
                     <div
-                      className="h-12 w-12 shrink-0 rounded-full border border-white/15 bg-gradient-to-br from-brand-cyan/30 to-brand-magenta/25 shadow-[0_0_34px_-6px_rgba(129,255,254,0.55)]"
+                      className="h-11 w-11 shrink-0 rounded-xl border border-white/15 bg-gradient-to-br from-brand-cyan/30 to-brand-magenta/25 shadow-[0_0_28px_-6px_rgba(129,255,254,0.45)]"
                       aria-hidden="true"
                     />
                   </div>
@@ -188,11 +186,11 @@ export function Hero() {
               </div>
 
               <div
-                className="pointer-events-none absolute -bottom-7 -start-7 hidden h-32 w-32 rounded-full border border-white/10 lg:block"
+                className="pointer-events-none absolute -bottom-6 -start-6 hidden h-28 w-28 -rotate-6 rounded-3xl border border-white/10 lg:block"
                 aria-hidden="true"
               />
               <div
-                className="pointer-events-none absolute -top-10 -end-12 hidden h-40 w-40 rounded-full border border-white/10 lg:block"
+                className="pointer-events-none absolute -top-8 -end-10 hidden h-36 w-36 rotate-3 rounded-3xl border border-white/10 lg:block"
                 aria-hidden="true"
               />
             </div>
