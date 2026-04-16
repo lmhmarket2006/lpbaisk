@@ -10,9 +10,23 @@ export function Instructor() {
 
           <div className="relative grid gap-10 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-4">
-              <div className="mx-auto flex aspect-[4/5] max-w-sm items-end justify-center overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.08] to-black/40 shadow-[var(--shadow-glow-blue)] lg:mx-0">
-                <div className="w-full p-6">
-                  <div className="rounded-2xl border border-white/10 bg-black/35 p-4 backdrop-blur">
+              <div className="relative mx-auto aspect-[4/5] max-w-sm overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.08] via-brand-navy to-black/55 shadow-[var(--shadow-glow-blue)] lg:mx-0">
+                <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_18%,rgba(129,255,254,0.18),transparent_45%),radial-gradient(circle_at_50%_92%,rgba(251,66,253,0.12),transparent_45%)]" />
+                <div className="pointer-events-none absolute inset-10 rounded-[2.5rem] border border-white/10 lens-ring opacity-70" />
+                <div className="relative flex h-full flex-col items-center justify-center px-8 text-center">
+                  <div className="relative flex h-40 w-40 items-center justify-center rounded-full border border-white/15 bg-black/25 shadow-[0_0_0_1px_rgba(255,255,255,0.06),0_30px_90px_-35px_rgba(19,25,180,0.65)]">
+                    <div className="absolute inset-2 rounded-full border border-white/10" />
+                    <div className="absolute inset-6 rounded-full border border-dashed border-white/10 opacity-60" />
+                    <div className="relative flex flex-col items-center">
+                      <p className="font-en text-[10px] font-medium tracking-[0.35em] text-white/45 sm:text-xs">
+                        INSTRUCTOR
+                      </p>
+                      <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                        أ.ز
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mt-8 w-full rounded-2xl border border-white/10 bg-black/35 p-4 backdrop-blur">
                     <p className="text-xs text-white/60">المدرّب</p>
                     <p className="mt-1 text-2xl font-bold text-white">أحمد زغلول</p>
                     <p className="mt-2 text-sm text-white/70">
@@ -21,10 +35,6 @@ export function Instructor() {
                   </div>
                 </div>
               </div>
-              <p className="mt-4 text-center text-xs text-white/55 lg:text-start">
-                صورة تعريفية قريبًا — التصميم جاهز لاستبدال الخلفية بصورة احترافية
-                عالية الجودة.
-              </p>
             </div>
 
             <div className="lg:col-span-8">

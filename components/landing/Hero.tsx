@@ -77,6 +77,25 @@ export function Hero() {
                 </span>
               ))}
             </div>
+
+            <div className="mt-6">
+              <p className="text-xs font-semibold text-white/55">مناسبة لـ</p>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {[
+                  "المبتدئين في التصوير",
+                  "صناع المحتوى",
+                  "أصحاب المشاريع",
+                  "من يرفع جودة صوره (كاميرا أو موبايل)",
+                ].map((label) => (
+                  <span
+                    key={label}
+                    className="rounded-full border border-white/10 bg-gradient-to-l from-brand-indigo/25 to-white/[0.03] px-3 py-1 text-xs text-white/85 sm:text-sm"
+                  >
+                    {label}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="relative lg:col-span-5">
